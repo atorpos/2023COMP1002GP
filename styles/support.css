@@ -1,16 +1,16 @@
 html {
-	background-image: url('images/support_background.jpg');
+	background-image: url('../images/support_background.jpg');
   background-size: cover;
 	width: 100%;
   }
 
 @font-face {
     font-family: famicon_font;
-    src: url(GrandiftPersonalUse-ywxVd.otf);
+    src: url(images/GrandiftPersonalUse-ywxVd.otf);
 }
 @font-face{
     font-family: title_font;
-    src: url(Diskun-epmp.ttf);
+    src: url(images/Diskun-epmp.ttf);
 }
   
   body {
