@@ -2,15 +2,14 @@ const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 
-const frameCount = 148;
+const frameCount = 118;
 const currentFrame = index => (
-    `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
-    // `images/Famicom${index.toString().padStart(4, '1')}.jpg`
-
+    `images/Famicom${index.toString().padStart(3, '0')}.jpg`
+    // `https://www.apple.com/105/media/us/airpods-pro/2019/1299e2f5_9206_4470_b28e_08307a42f19b/anim/sequence/large/01-hero-lightpass/${index.toString().padStart(4, '0')}.jpg`
 )
 
 const preloadImages = () => {
-    for (let i = 1; i < frameCount; i++) {
+    for (let i = 0; i < frameCount; i++) {
         const img = new Image();
         img.src = currentFrame(i);
     }
@@ -42,3 +41,16 @@ window.addEventListener('scroll', () => {
 });
 
 preloadImages()
+
+const stickyText = document.querySelector('.sticky-text');
+const headerHeight = document.querySelector('header').offsetHeight;
+
+window.addEventListener('scroll', function() {
+    const scrollPosition = window.scrollY;
+
+    if (scrollPosition > headerHeight) {
+        stickyText.classList.add('sticky');
+    } else {
+        stickyText.classList.remove('sticky');
+    }
+});
