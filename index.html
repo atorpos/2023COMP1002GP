@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nintendo Family Computer</title>
-    <link rel="stylesheet" href="styles/main.css?v=1.1">
+    <link rel="stylesheet" href="styles/main.css?v=1.56">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!--    <script src="https://use.fontawesome.com/95f27386cc.js"></script>-->
 
@@ -51,29 +51,53 @@
 </script>
 
 <main class="main" role="main">
-    <div class="hero-slideshow">
-        <div class="slideshow-container">
-            <div class="slide">
-                <div class="slide-inner">
-                    <div class="slide-image" style="background-image: url('images/hero_01.jpg');">
-                        testing1
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-inner">
-                    <div class="slide-image" style="background-image: url('images/hero_02.jpg');">
-                        testing2
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <div class="slide-inner">
-                    <div class="slide-image" style="background-image: url('images/hero_03.jpg');">
-                        testing3
-                    </div>
-                </div>
-            </div>
+    <div class="carousel">
+        <input type="radio" name="carousel" id="slide-btn-1" class="slide-btn" onclick="setInt();" checked />
+        <input type="radio" name="carousel" id="slide-btn-2" class="slide-btn" onclick="setInt();" />
+        <input type="radio" name="carousel" id="slide-btn-3" class="slide-btn" onclick="setInt();" />
+<!--        <input type="radio" name="carousel" id="slide-btn-4" class="slide-btn" onclick="setInt();" />-->
+<!--        <input type="radio" name="carousel" id="slide-btn-5" class="slide-btn" onclick="setInt();" />-->
+        <div class="slide one parallax-effect">
+<!--            <h1>Slide 1</h1>-->
+            <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.nitendo.com/">Classic Nintendo</a></div></div>
+        <div class="slide two parallax-effect">
+<!--            <h1>Slide 2</h1>-->
+            <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.nitendo.com/">Classic Nintendo</a></div></div>
+        <div class="slide three parallax-effect">
+<!--            <h1>Slide 3</h1>-->
+            <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.nitendo.com/">Classic Nintendo</a></div></div>
+<!--        <div class="slide four parallax-effect"><h1>Slide 4</h1>-->
+<!--            <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.learningrobo.com/">Learning Robo</a></div></div>-->
+<!--        <div class="slide five parallax-effect"><h1>Slide 5</h1>-->
+<!--            <div class="credit">Made with <span style="color:tomato">❤</span> by <a href="https://www.learningrobo.com/">Learning Robo</a></div></div>-->
+        <div class="labels">
+            <label for="slide-btn-1"></label>
+            <label for="slide-btn-2"></label>
+            <label for="slide-btn-3"></label>
+<!--            <label for="slide-btn-4"></label>-->
+<!--            <label for="slide-btn-5"></label>-->
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="mini_box">
+            <h1>New Classic!</h1>
+            <h3>The Family Computer</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Nintendo-Famicom-Console-Set-FL.png/1200px-Nintendo-Famicom-Console-Set-FL.png" alt="famcon">
+        </div>
+        <div class="mini_box">
+            <h1>Lighting Year!</h1>
+            <h3>Famicom Disk System</h3>
+            <img src="https://www.copetti.org/images/consoles/nes/fds/drive.82f8f9c0064d1aff69e27d980adbee1909c9477f3f5456bfd859fd4b52eb44ba.png" alt="disksystem">
+        </div>
+        <div class="mini_box">
+            <h1>Fun Time!</h1>
+            <h3>Super Mario!</h3>
+            <img src="https://forums.launchbox-app.com/uploads/monthly_2022_08/1199529986_SuperMarioBros.(Japan).png.2ce27fcb5a84948aa8655001f7fd0422.png" alt="game disk">
+        </div>
+        <div class="mini_box">
+            <h1>Who we are?</h1>
+            <h3>About Nintendo!</h3>
+            <img src="https://1000logos.net/wp-content/uploads/2017/03/Nintendo-Logo-1983.png" alt="logo">
         </div>
     </div>
 </main>
@@ -86,6 +110,6 @@
         <a class="footer-link" href="#">Contact</a>
     </div>
 </footer>
-<script src="js/scripts.js?v=1.6"></script>
+<script src="js/scripts.js?v=1.7"></script>
 </body>
 </html>

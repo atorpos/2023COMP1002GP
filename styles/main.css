@@ -30,6 +30,10 @@ header {
 li {
     list-style: none;
 }
+li a {
+    color: #fff;
+    text-decoration: none;
+}
 
 .nav-container {
     display: flex;
@@ -98,39 +102,158 @@ li {
     color: #D10000;
 }
 
-
-.hero-slideshow {
+.slide  {
+    text-decoration: none;
+    color: inherit;
+}
+.slide-btn {
+    display: none;
+}
+.carousel {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;
+    height: 50vh;
     overflow: hidden;
 }
-
-.slideshow-container {
+.carousel h1 {
+    text-align: center;
+    margin: 0 auto;
+    line-height: 75vh;
+    font-size: 10vmin;
+}
+.slide {
+    float: left;
+    height: 100%;
+    width: 0;
+    transition: width .3s linear;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.slide > * {
+    transition: transform .15s linear;
+    transform: scale(0);
+}
+.labels {
     position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.labels label {
+    display: inline-block;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin: .5vmin 2vmin;
+    border: 3px solid white;
+}
+.carousel .one,
+.carousel .two,
+.carousel .three,
+.carousel .four,
+.carousel .five {
+    background-position: center center;
+    background-size: cover;
+}
+.carousel .one {
+    /*background-image: url(https://cdn.pixabay.com/photo/2016/10/14/19/21/canyon-1740973__340.jpg);*/
+    background-image: url("../images/hero_01.jpg");
+}
+.carousel .two {
+    background-image: url("../images/hero_02.jpg");
+}
+.carousel .three {
+    background-image: url("../images/hero_03.jpg");
+}
+.carousel .four {
+    background-image: url(https://cdn.pixabay.com/photo/2021/09/20/21/32/lake-6641880__340.jpg);
+}
+.carousel .five {
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
+}
+#slide-btn-1:checked ~ .one,
+#slide-btn-2:checked ~ .two,
+#slide-btn-3:checked ~ .three,
+#slide-btn-4:checked ~ .four,
+#slide-btn-5:checked ~ .five {
+    width: 100%;
+}
+#slide-btn-1:checked ~ .one > *,
+#slide-btn-2:checked ~ .two > *,
+#slide-btn-3:checked ~ .three > *,
+#slide-btn-4:checked ~ .four > *,
+#slide-btn-5:checked ~ .five > * {
+    transform: scale(1);
+}
+#slide-btn-1:checked ~ .labels label[for="slide-btn-1"],
+#slide-btn-2:checked ~ .labels label[for="slide-btn-2"],
+#slide-btn-3:checked ~ .labels label[for="slide-btn-3"],
+#slide-btn-4:checked ~ .labels label[for="slide-btn-4"],
+#slide-btn-5:checked ~ .labels label[for="slide-btn-5"] {
+    background-color: white;
+}
+.credit{
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.credit a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+}
+
+.wrapper {
+    padding: 5% 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.mini_box {
+    background-color: #0E0E0E;
+    height: 20vh;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.mini_box h1{
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
+    right: 0;
+    margin: auto;
+    z-index: 1; /* Place the heading above the image */
+    color: white;
+    max-width: 90%; /* Adjust as needed to prevent overflowing */
+    overflow: hidden;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis;
 }
-
-.slide {
-    flex: 0 0 100%;
+.mini_box h3{
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1; /* Place the heading above the image */
+    color: white;
+    max-width: 90%; /* Adjust as needed to prevent overflowing */
+    overflow: hidden;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-overflow: ellipsis;
 }
+.mini_box img {
+    width: 60%; /* Make the image take up the full width of the container */
+    height: auto; /* Make the image take up the full height of the container */
+    pobject-fit: cover;
 
-.slide-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.slide-image {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
 }
 
 /*Dropdown menu */
@@ -196,6 +319,15 @@ footer {
 
 
 @media (max-width: 992px) {
+    .wrapper {
+        padding: 5% 0px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mini_box {
+        height:450px;
+    }
     .navbar .links,
     .navbar .action_btn {
         display: none;
@@ -224,35 +356,12 @@ footer {
 }
 
 @media (max-width: 572px) {
+    .mini_box {
+        height:230px;
+    }
     .dropdown_menu {
         left: 2rem;
         width: unset;
     }
 }
-
-/*@media only screen and (min-width: 735px) and(max-width: 1068px) and(orientation: portrait) {*/
-/*    .hero-eyebrow {*/
-/*        top:-70px*/
-/*    }*/
-/*}*/
-
-/*@media screen and (max-width: 768px) {*/
-/*    .menu {*/
-/*        display: none;*/
-/*        flex-direction: column;*/
-/*        align-items: flex-start;*/
-/*    }*/
-
-/*    .menu li {*/
-/*        margin: 10px 0;*/
-/*    }*/
-
-/*    .menu-icon {*/
-/*        display: block;*/
-/*    }*/
-
-/*    .menu.responsive {*/
-/*        display: flex;*/
-/*    }*/
-/*}*/
 
