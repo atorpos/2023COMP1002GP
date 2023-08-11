@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title>Support</title>
+    <!--link css the form -->
+    <link rel="stylesheet" href="styles/support.css"/>
+    <!--        <link rel="stylesheet" href="styles/main.css"/>-->
+</head>
+
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo_s.png" alt="logo"></a>
+        </div>
+        <ul class="links">
+            <li><a href="#">About Famicon</a></li>
+            <li><a href="#">Hit Games</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="support.html">Supports</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <a href="#" class="action_btn">Get Started</a>
+        <div class="toggle_bth">
+            <i class="fa-solid fa-bars fa-beat"></i>
+        </div>
+    </div>
+    <div class="dropdown_menu">
+        <li><a href="#">About Famicon</a></li>
+        <li><a href="#">Hit Games</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="support.html">Supports</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+    </div>
+</header>
+<script>
+    const toggleBth = document.querySelector('.toggle_bth')
+    const toggleBtnIcon = document.querySelector('.toggle_bth i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBth.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+        toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+    }
+</script>
+
+<main>
+    <!-- Title section -->
+    <div id="title">
+        <img src="images/question_mark.png" alt="question_block" class="q_block">
+        <h2>How can we help?</h2>
+        <img src="images/question_mark.png" alt="question_block" class="q_block">
+    </div>
+
+    <h4>Please fill out this form and we will be in touch with you shortly</h4>
+
+    <!-- User input form section -->
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <!-- First Name -->
+            <div>
+                <label for="firstName">Firstname</label>
+                <input id="firstName" type="text" name="firstName" value="" size="50" maxlength="50" required/>
+            </div>
+            <!-- Last Name -->
+            <div>
+                <label for="lastName">Lastname</label>
+                <input id="lastName" type="text" name="lastName" size="50" maxlength="50" required/>
+            </div>
+            <!-- Email  -->
+            <div>
+                <label for="email">Email address</label>
+                <input id="email" type="email" name="email" size="50" placeholder="nintendo@email.com"/>
+            </div>
+
+            <!-- Phone number -->
+            <div>
+                <label for="tel">Phone</label>
+                <input id="tel" type="tel" name="tel" size="50" placeholder="(000)000-0000"/>
+            </div>
+
+        </fieldset>
+
+        <!-- Second fieldset for message input -->
+        <fieldset>
+            <legend>Message</legend>
+            <!-- Provide category selection for user -->
+            <div>
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="TS">Technical Support</option>
+                    <option value="AS">Account & Security</option>
+                    <option value="refund">Store Info & Refunds</option>
+                    <option value="repair">Hardware & Repairs</option>
+                    <option value="CO">Career Opportunity</option>
+                </select>
+            </div>
+            <!-- Text area -->
+            <div>
+                <label for="Message">Message</label>
+                <textarea id="Message" name="Message" rows="5" cols="46" required></textarea>
+            </div>
+
+            <!-- Add an input and label for a photo (type="file") -->
+            <div>
+                <label for="attach a file">File</label>
+                <input id="File" type="file" name="File"/>
+            </div>
+        </fieldset>
+        <!-- Submission form-->
+        <div id="submission">
+            <div id="send_btn">
+                <input type="submit" value="SEND" id="nextStep"/>
+            </div>
+            <!-- Displayed after the submit button is pressed -->
+            <div id="thank_you" style="display: none;">
+                <p>Thanks for filling up the form!</p>
+                <img src="images/Yjbtbm-mario-clipart-photos.png" alt="Mario" class="mario">
+            </div>
+        </div>
+    </form>
+</main>
+<!-- Footer -->
+<footer>
+    <p><small>©Nintendo All rights reserved</small></p>
+</footer>
+<!--Link javascript file-->
+<script src="js/support.js"></script>
+</body>
+</html>

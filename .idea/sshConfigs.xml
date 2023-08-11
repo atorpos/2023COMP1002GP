@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="localhost" id="a666edf9-6557-424d-bf5c-8f0d0d7a628e" port="22" customName="SFT3A" nameFormat="CUSTOM" useOpenSSHConfig="true">
+        <option name="customName" value="SFT3A" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

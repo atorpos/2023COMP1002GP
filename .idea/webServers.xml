@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9b5c5143-34a8-4447-a6e5-72474b8f9fb5" name="SFT3A" url="http://s.awoz.co/class/famicon">
+        <fileTransfer rootFolder="/var/www/dev/class/famicon" accessType="SFTP" host="ec2-52-220-0-207.ap-southeast-1.compute.amazonaws.com" port="22" sshConfigId="58622aee-e9fe-40c3-a3d8-c058c0437086" sshConfig="ubuntu@ec2-52-220-0-207.ap-southeast-1.compute.amazonaws.com:22 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
