@@ -1,0 +1,88 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <head>
+
+        <script>
+            function showPopup() {
+              alert("Thank you for your comment. It will help us to improve more.");
+            }
+            </script>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comment</title>
+    
+        <link rel="stylesheet" href="styles/main.css?v=1.56">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--    <script src="https://use.fontawesome.com/95f27386cc.js"></script>-->
+    </head>
+</head>
+<body style="background-image: url(./images/hero_03_FADE.png); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo_s.png" alt="logo"></a>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">About Famicon</a></li>
+                <li><a href="games.html">Hit Games</a></li>
+                <li><a href="comment.html">Feedback</a></li>
+                <li><a href="support.html">Supports</a></li>
+                <li><a href="aboutTheProduct.html">About Us</a></li>
+               
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_bth">
+                <i class="fa-solid fa-bars fa-beat"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">About Famicon</a></li>
+            <li><a href="games.html">Hit Games</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="support.html">Supports</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+
+<div class="commentSection">
+<br>
+<h1>Leave a Comment</h1>
+
+<form onsubmit="showPopup(); return false;">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" size="40"><br><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" size="40"><br><br>
+  
+  <label for="comment">Comment:</label><br>
+  <textarea id="comment" name="comment" rows="10" cols="70"></textarea><br><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>
+
+
+<footer>
+    <div class="footer-logo">Nitendo</div>
+    <div class="footer-links">
+        <a class="footer-link" href="#">Home</a>
+        <a class="footer-link" href="#">About</a>
+        <a class="footer-link" href="#">Services</a>
+        <a class="footer-link" href="#">Contact</a>
+    </div>
+</footer>
+
+<script src="js/scripts.js?v=1.7"></script>
+</body>
+</html>
