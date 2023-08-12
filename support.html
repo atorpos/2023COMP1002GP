@@ -6,12 +6,12 @@
     <title>Support</title>
     <!--link css the form -->
     <link rel="stylesheet" href="styles/main.css?V=1.23">
-    <link rel="stylesheet" href="styles/support.css?V=1.347"/>
+    <link rel="stylesheet" href="styles/support.css?V=1.350"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
           integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Bootstrap CSS -->
-<!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 
 </head>
 
@@ -57,81 +57,113 @@
 </script>
 <main>
     <div class="sp_container">
-    <!-- Title section -->
-    <div id="title">
-        <img src="images/question_mark.png" alt="question_block" class="q_block">
-        <h2>How can we help?</h2>
-        <img src="images/question_mark.png" alt="question_block" class="q_block">
-    </div>
-
-    <h4>Please fill out this form and we will be in touch with you shortly</h4>
-
-    <!-- User input form section -->
-    <form>
-        <fieldset>
-            <legend>Contact Information</legend>
-            <!-- First Name -->
-            <div>
-                <label for="firstName">Firstname</label>
-                <input id="firstName" type="text" name="firstName" value=""  maxlength="50" required/>
-            </div>
-            <!-- Last Name -->
-            <div>
-                <label for="lastName">Lastname</label>
-                <input id="lastName" type="text" name="lastName"  maxlength="50" required/>
-            </div>
-            <!-- Email  -->
-            <div>
-                <label for="email">Email address</label>
-                <input id="email" type="email" name="email"  placeholder="nintendo@email.com"/>
-            </div>
-
-            <!-- Phone number -->
-            <div>
-                <label for="tel">Phone</label>
-                <input id="tel" type="tel" name="tel" placeholder="(000)000-0000"/>
-            </div>
-
-        </fieldset>
-
-        <!-- Second fieldset for message input -->
-        <fieldset>
-            <legend>Message</legend>
-            <!-- Provide category selection for user -->
-            <div>
-                <label for="category">Category</label>
-                <select id="category" name="category">
-                    <option value="TS">Technical Support</option>
-                    <option value="AS">Account & Security</option>
-                    <option value="refund">Store Info & Refunds</option>
-                    <option value="repair">Hardware & Repairs</option>
-                    <option value="CO">Career Opportunity</option>
-                </select>
-            </div>
-            <!-- Text area -->
-            <div>
-                <label for="Message">Message</label>
-                <textarea id="Message" name="Message" rows="5" required></textarea>
-            </div>
-
-            <!-- Add an input and label for a photo (type="file") -->
-            <div>
-                <label for="attach a file">File</label>
-                <input id="File" type="file" name="File"/>
-            </div>
-        </fieldset>
-        <!-- Submission form-->
-        <div id="submission">
-            <div id="send_btn">
-                <input type="submit" value="SEND" id="nextStep"/>
-            </div>
-            <!-- Displayed after the submit button is pressed -->
-            <div id="thank_you" style="display: none;">
-                <p>Thanks for filling up the form!</p>
-                <img src="images/Yjbtbm-mario-clipart-photos.png" alt="Mario" class="mario">
-            </div>
+        <!-- Title section -->
+        <div id="title">
+            <img src="images/question_mark.png" alt="question_block" class="q_block">
+            <h2>How can we help?</h2>
+            <img src="images/question_mark.png" alt="question_block" class="q_block">
         </div>
-    </form>
+
+        <h4>Please fill out this form and we will be in touch with you shortly</h4>
+
+        <!-- User input form section -->
+        <form>
+            <fieldset>
+
+                <legend>Contact Information</legend>
+                <div class="ip-container">
+                    <!-- First Name -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="firstName">Firstname</label>
+                        </div>
+                        <div class="col-75">
+                            <input id="firstName" type="text" name="firstName" value="" maxlength="50" required/>
+                        </div>
+                    </div>
+                    <!-- Last Name -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lastName">Lastname</label>
+                        </div>
+                        <div class="col-75">
+                            <input id="lastName" type="text" name="lastName" maxlength="50" required/>
+                        </div>
+                    </div>
+                    <!-- Email  -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email address</label>
+                        </div>
+                        <div class="col-75">
+                            <input id="email" type="email" name="email" placeholder="nintendo@email.com"/>
+                        </div>
+                    </div>
+
+                    <!-- Phone number -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="tel">Phone</label>
+                        </div>
+                        <div class="col-75">
+                            <input id="tel" type="tel" name="tel" placeholder="(000)000-0000"/>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Second fieldset for message input -->
+            <fieldset>
+                <legend>Message</legend>
+                <!-- Provide category selection for user -->
+                <div class="ip-container">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="category">Category</label>
+                        </div>
+                        <div class="col-75">
+                            <select id="category" name="category">
+                                <option value="TS">Technical Support</option>
+                                <option value="AS">Account & Security</option>
+                                <option value="refund">Store Info & Refunds</option>
+                                <option value="repair">Hardware & Repairs</option>
+                                <option value="CO">Career Opportunity</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- Text area -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="Message">Message</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="Message" name="Message" rows="5" required></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Add an input and label for a photo (type="file") -->
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="File">File</label>
+                        </div>
+                        <div class="col-75">
+                            <input id="File" type="file" name="File"/>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <!-- Submission form-->
+            <div id="submission">
+                <div id="send_btn" class="row">
+                    <input type="submit" value="SEND" id="nextStep"/>
+                </div>
+                <!-- Displayed after the submit button is pressed -->
+                <div id="thank_you" style="display: none;">
+                    <p>Thanks for filling up the form!</p>
+                    <img src="images/Yjbtbm-mario-clipart-photos.png" alt="Mario" class="mario">
+                </div>
+            </div>
+        </form>
     </div>
 </main>
 <!-- Footer -->

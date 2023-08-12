@@ -66,20 +66,45 @@ fieldset {
     overflow: hidden;
 }
 .ip-container {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+    padding: 20px;
 }
-.input-container label {
-    font-size: 16px;
-    margin-bottom: 5px;
+.ip-container label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
 }
 
-.input-container input {
+.ip-container input {
     padding: 10px;
     font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+input[type=text], input[type=email], input[type=tel] ,select, textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 legend {
@@ -128,7 +153,7 @@ small {
 }
 @media (max-width: 572px) {
     .sp_container {
-        height: 760px;
+        height: 1440px;
     }
     h2 {
         color: #627d86;
@@ -140,4 +165,11 @@ small {
         height: auto;
         padding: 0 1vw 0.5vw 1vw;
     }
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+
 }
