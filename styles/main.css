@@ -1,6 +1,14 @@
 /*html {*/
 /*    height: 100vh;*/
 /*}*/
+@font-face {
+    font-family: famicon_font;
+    src: url(../images/GrandiftPersonalUse-ywxVd.otf);
+}
+@font-face{
+    font-family: title_font;
+    src: url(../images/Diskun-epmp.ttf);
+}
 body {
     margin: 0;
     padding: 0;
@@ -215,7 +223,7 @@ li a {
 }
 .mini_box {
     background-color: #0E0E0E;
-    height: 20vh;
+    height: 30vh;
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
