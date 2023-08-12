@@ -16,7 +16,7 @@ main {
     font-family: famicon_font, sans-serif;
     color: #333;
     width: 80%;
-    height: 80vh;
+    min-height: 80vh;
     background-color: #EFECDA;
     margin: 0px auto;
     padding: 2em 2em 2em 2em;
