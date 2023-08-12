@@ -1,6 +1,14 @@
 /*html {*/
 /*    height: 100vh;*/
 /*}*/
+@font-face {
+    font-family: famicon_font;
+    src: url(../images/GrandiftPersonalUse-ywxVd.otf);
+}
+@font-face{
+    font-family: title_font;
+    src: url(../images/Diskun-epmp.ttf);
+}
 body {
     margin: 0;
     padding: 0;

@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mei Hirata"/>
+    <meta name="description" content="Corporate information"/>
     <title>About Us</title>
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/companyinfo.css?V=1.3">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!--    <script src="https://use.fontawesome.com/95f27386cc.js"></script>-->
 </head>
 <body>
@@ -48,78 +54,84 @@
     }
 </script>
 <main>
-    !-- Section1 : company main image and title -->
-    <section id="top">
-        <div id="main-img">
-            <img src="images/aboutpage_backgroud.jpg" alt="Nintedo company">
-            <h1>About Nintendo</h1>
-        </div>
-    </section>
-
-    <!-- Section2: Main part of corporate slogan and mission -->
-    <section id="main-part">
-        <!-- Left part with image that has image change effect -->
-        <div class="main-left">
-            <img src="images/mariogroup.png" alt="Half_Mario" id="defalut-mario" onmouseover="mouseOn();" onmouseout="mouseOff();">
-
-        </div>
-        <!-- Right part with heading and paragraph -->
-        <div class="main-right">
-            <h2 class="main-heading"> Creating smiles for generations </h2>
-            <p class="main-para">Nintendo's mission is to put smiles on the faces of everyone we touch.
-                We do so by creating new surprises for people across the world to enjoy together.
-                We've forged our own path since 1889, when we began making hanafuda playing cards in Kyoto, Japan.
-                Today, we're fortunate to be able to share our characters, ideas and worlds through the medium of video games and the entertainment industry.</p>
-        </div>
-    </section>
-
-
-    <!-- Section 2: Description of Nintendo game and service-->
-    <section id="game">
-        <!-- Left part of game part -->
-        <div class="game-left">
-            <h2>Game software and Service</h2>
-            <p>To ensure that our customers can play games with peace of mind,
-                we strive to develop game software and services that take safety into consideration,
-                create a system that allows parents to monitor their children's use of the software and services, and eliminate inappropriate content.</p>
-            <!-- List of Nintendo game's features -->
-            <ul>
-                <li> Safety-conscious game software development</li>
-                <li> Indication of age groups for game software</li>
-                <li> Parental use restrictions</li>
-                <li> Elimination of inappropriate content in communication functions</li>
-            </ul>
-        </div>
-        <!-- Right part of game part -->
-        <div class="game-right">
-            <img src="images/famicon_tv.jpg" alt="nintendo consoles">
-        </div>
-    </section>
-
-
-    <!-- Section3: Team members introduction-->
-    <section id="our-Team">
-        <h2>Our Member</h2>
-        <!-- Container of members -->
-        <div class="teamContainer">
-            <!-- First member -->
-            <div class="team-item">
-                <img src="images/yoshi_big.png" alt="">
-                <h5 class="member-name">Gerald Aguyaoy</h5>
+    <div class="ab_container">
+        <!-- Section1 : company main image and title -->
+        <section id="top">
+            <div id="main-img">
+                <img src="images/aboutpage_backgroud.jpg" alt="Nintendo company">
+                <h1>About Nintendo</h1>
             </div>
-            <!-- Second member -->
-            <div class="team-item">
-                <img src="images/zelda_pixel.png" alt="">
-                <h5 class="member-name">Oskar Wong</h5>
+        </section>
+
+        <!-- Section2: Main part of corporate slogan and mission -->
+        <section id="main-part">
+            <!-- Left part with image that has image change effect -->
+            <div class="main-left">
+                <img src="images/mariogroup.png" alt="Half_Mario" id="defalut-mario" onmouseover="mouseOn();"
+                     onmouseout="mouseOff();">
+
             </div>
-            <!-- Third member -->
-            <div class="team-item">
-                <img src="images/kirby___pixel.png" alt="">
-                <h5 class="member-name">Mei Hirata</h5>
+            <!-- Right part with heading and paragraph -->
+            <div class="main-right">
+                <h2 class="main-heading"> Creating smiles for generations </h2>
+                <p class="main-para">Nintendo's mission is to put smiles on the faces of everyone we touch.
+                    We do so by creating new surprises for people across the world to enjoy together.
+                    We've forged our own path since 1889, when we began making hanafuda playing cards in Kyoto, Japan.
+                    Today, we're fortunate to be able to share our characters, ideas and worlds through the medium of
+                    video games and the entertainment industry.</p>
             </div>
-        </div>
-    </section>
+        </section>
+
+
+        <!-- Section 2: Description of Nintendo game and service-->
+        <section id="game">
+            <!-- Left part of game part -->
+            <div class="game-left">
+                <h2>Game software and Service</h2>
+                <p>To ensure that our customers can play games with peace of mind,
+                    we strive to develop game software and services that take safety into consideration,
+                    create a system that allows parents to monitor their children's use of the software and services,
+                    and eliminate inappropriate content.</p>
+                <!-- List of Nintendo game's features -->
+                <ul>
+                    <li> Safety-conscious game software development</li>
+                    <li> Indication of age groups for game software</li>
+                    <li> Parental use restrictions</li>
+                    <li> Elimination of inappropriate content in communication functions</li>
+                </ul>
+            </div>
+            <!-- Right part of game part -->
+            <div class="game-right">
+                <img src="images/famicon_tv.jpg" alt="nintendo consoles">
+            </div>
+        </section>
+
+
+        <!-- Section3: Team members introduction-->
+        <section id="our-Team">
+            <h2>Our Member</h2>
+            <!-- Container of members -->
+            <div class="teamContainer">
+                <!-- First member -->
+                <div class="team-item">
+                    <img src="images/yoshi_big.png" alt="">
+                    <h5 class="member-name">Gerald Aguyaoy</h5>
+                </div>
+                <!-- Second member -->
+                <div class="team-item">
+                    <img src="images/zelda_pixel.png" alt="">
+                    <h5 class="member-name">Oskar Wong</h5>
+                </div>
+                <!-- Third member -->
+                <div class="team-item">
+                    <img src="images/kirby___pixel.png" alt="">
+                    <h5 class="member-name">Mei Hirata</h5>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
+<script src="js/companyinfo.js"></script>
 <footer>
     <div class="footer-logo">Nitendo</div>
     <div class="footer-links">
