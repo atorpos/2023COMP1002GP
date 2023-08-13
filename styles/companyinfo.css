@@ -70,13 +70,17 @@ main {
 }
 
 .main-heading {
-    font-size: 3vw;
+
+}
+.main-right h2 {
+    font-size: 2vw;
     margin-bottom: 2vw;
     font-family: famicon_font;
-    /* Add rainbow border */
     border-bottom: 20px solid;
     border-image: conic-gradient(#f5f551, #5eff5e, #84a1ff, #ff45ff, #ff5a5a, #ffbc41, #f5f551) 1;
-    height: 40px;
+    height: 3vw;
+    display: block;
+
 }
 
 .main-para {
@@ -105,6 +109,7 @@ main {
 .game-left h2 {
     font-size: 3vw;
     font-family: famicon_font;
+    line-height: 4vw;
 }
 
 .game-left p {
@@ -225,7 +230,7 @@ h1 {
     color: #D10000;
     font-size: 2vw;
     margin-top: 0;
-    width: 200px;
+    /*width: 200px;*/
 }
 
 h2 {
